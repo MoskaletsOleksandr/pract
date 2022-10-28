@@ -1,105 +1,221 @@
-:root{
-    --font-ral:
+:root {
+--first-title-color: #ffffff;
+--second-title-color: #303030;
+--first-btn-color: #ffffff;
+--second-btn-color: #303030;
+
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 .hide
 /* .link{
     list-style: none;
 } */
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 .header {
-    background-color: green;
-    text-decoration: none;
-    font-weight: 600;
-font-size: 12px;
-line-height: 1.3333;
-letter-spacing: 0.1em;
+  background-color: green;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
 }
 .logo {
 }
-.header-nav {
-    list-style: none;
+.btn{
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1/33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+  
 }
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
+.header-nav {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 .header-nav-link {
-    /* font-weight: 600;
+font-weight: 600;
 font-size: 12px;
 line-height: 1.3333;
 letter-spacing: 0.1em; */
-color: #FFFFFF;
-text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
-/* line-height / font-size */
 
-.header-nav-link:hover,.header-nav-link:focus{
-    color: #FF6C00;
+/*              Header               */
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #ff6c00;
 }
-.header-nav-link:active{
-    color: black;
+.header-nav-link:active {
+  color: black;
 }
-.header-contact{
-    /* font-weight: 600;
+.header-contact {
+  /* font-weight: 600;
 font-size: 12px;
 line-height: 1.3333;
 letter-spacing: 0.1em; */
-text-transform: uppercase;
+  text-transform: uppercase;
 }
-.header-btn{
-    font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.09em;
-text-transform: uppercase;
+.header-btn {
+  color: var(--first-btn-color);
+}
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
 
-color: #FFFFFF;
+/*      HERO             */
+
+.hero {
+  background-image: url(../images/hero.jpg);
 }
-.uptitle{
-    font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-/* identical to box height */
-text-transform: uppercase;
-color: rgba(157, 164, 189, 0.6);
+.hero-link: :hover .hero-link: :focus{
+
+} 
+.hero-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
 }
-.hero{
-    background-image: url(../images/hero.jpg);
+.hero-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  /* identical to box height */
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
 }
-.hero-uptitle{
-    font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-/* identical to box height */
-text-transform: uppercase;
-color: rgba(157, 164, 189, 0.6);
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6666;
+  /* or 167% */
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.6666;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-uptitle {
+}
+.about-title {
+  color: #303030;
+}
+.about-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-button {
+  color: #303030;
+}
+
+/*              prices               */
+.prices {
+  background-color: gray;
+}
+.prices-uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-tite {
+}
+.prices-list {
+}
+.prices-item {
+}
+.prices-item-text {
+}
+.prices-btn {
 
 }
-.hero-title{
-    font-weight: 700;
-font-size: 72px;
-line-height: 85px;
-/* identical to box height */
-letter-spacing: 0.05em;
-color: #FFFFFF;
+
+
+
+/*              BENEFITS             */
+
+.benefits {
 }
-.hero-subtitle{
-    font-weight: 400;
-font-size: 18px;
-line-height: 1.6666;
-/* or 167% */
-letter-spacing: 0.02em;
-color: #9DA4BD;}
-.section-title{
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-count {
     font-weight: 700;
 font-size: 42px;
-line-height: 1.6666;
+line-height: calc(57/42);
+text-align: center;
 letter-spacing: 0.05em;
-color: #303030;
+color: var(--second-title-color);
+}
+.benefits-plus {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22/16);
+    text-align: center;
+    color: #FF6C00;
+}
+.benefits-item-text {
+    font-weight: 600;
+font-size: 11px;
+line-height: calc(15/11);
+text-align: center;
+color: var(--second-title-color);
+}
+.benefits-uptitle {
+}
+.benefits-title {
+    color: #303030;
+}
+.benefits-subtitle {
+    font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #555555;
 }
