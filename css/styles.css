@@ -1,222 +1,362 @@
 :root {
---first-title-color: #ffffff;
---second-title-color: #303030;
---first-btn-color: #ffffff;
---second-btn-color: #303030;
-
+  --font-ral: 'Raleway', sans-serif;
+  --color-gray: #303030;
+  --first-title-color: #ffffff;
+  --second-title-color: #303030;
+  --first-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --base-lg: 1.36;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
-}
-.hide
-/* .link{
-    list-style: none;
-} */
-
-ul {
-  list-style: none;
-}
-.header {
-  background-color: green;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.3333;
-  letter-spacing: 0.1em;
-}
-.logo {
-}
-.btn{
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1/33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    cursor: pointer;
-  
-}
-.header-nav {
-  list-style: none;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
-.header-nav-link {
-font-weight: 600;
-font-size: 12px;
-line-height: 1.3333;
-letter-spacing: 0.1em; */
-  color: #ffffff;
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* .link{
+  list-style: none;
+} */
+.hide {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.link {
   text-decoration: none;
 }
 
-/*              Header               */
+.section-title {
+  font-family: var(--font-ral);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
+}
 
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: #ff6c00;
-}
-.header-nav-link:active {
-  color: black;
-}
-.header-contact {
-  /* font-weight: 600;
-font-size: 12px;
-line-height: 1.3333;
-letter-spacing: 0.1em; */
-  text-transform: uppercase;
-}
-.header-btn {
-  color: var(--first-btn-color);
-}
 .uptitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
 }
 
-/*      HERO             */
-
-.hero {
-  background-image: url(../images/hero.jpg);
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.hero-link: :hover .hero-link: :focus{
 
-} 
-.hero-uptitle {
+/* -----------------HEADER---------------- */
+
+.header a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+  text-decoration: none;
+}
+.header {
+  background-color: rgb(73, 75, 70);
+}
+
+.header-nav {
+  list-style: none;
+}
+
+.header-nav-link {
+  /* font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff; */
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-nav-link.current {
+  color: #ff6c00;
+}
+
+.header-nav-link:active {
+  color: #000;
+}
+.header-contact {
+  /* font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em; */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* line-height / font-size =  */
+
+.header-btn {
+  color: var(--first-btn-color);
+}
+
+/* -----------------HERO---------------- */
+.hero-list {
+  background-color: #ffffff;
+}
+
+.hero-link {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: #ff6c00;
+}
+.hero-uptitle {
+  color: var(--color-gray);
+}
+
+.hero {
+  background-image: url(../images/hero_image.jpg);
+}
+.hero-uptitle {
   color: rgba(157, 164, 189, 0.6);
 }
+
 .hero-title {
-  font-weight: 700;
+  font-family: var(--font-ral);
   font-size: 72px;
-  line-height: 85px;
-  /* identical to box height */
+  line-height: 1.1805;
   letter-spacing: 0.05em;
   color: var(--first-title-color);
 }
 .hero-subtitle {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.6666;
-  /* or 167% */
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-.section-title {
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.6666;
-  letter-spacing: 0.05em;
-  color: #303030;
-}
 
-.about {
-}
+/* -----------------ABOUT---------------- */
+
 .about-list {
 }
 .about-item {
 }
 .about-uptitle {
-}
-.about-title {
   color: #303030;
-
 }
+
+.about-title {
+  color: var(--second-title-color);
+}
+
 .about-subtitle {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
 }
+
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
 }
-.about-button {
-  color: #303030;
+.about-btn {
+  color: var(--second-btn-color);
 }
 
-/*              prices               */
+/* -----------------PRICES---------------- */
+
 .prices {
-  background-color: gray;
+  background-color: #303030;
 }
 .prices-uptitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
-.prices-tite {
+.prices-title {
+  color: var(--first-title-color);
 }
+
 .prices-list {
 }
 .prices-item {
 }
 .prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 .prices-btn {
-
+  color: var(--first-btn-color);
 }
 
-
-
-/*              BENEFITS             */
+/* -----------------BENEFITS---------------- */
 
 .benefits {
 }
+
 .benefits-list {
 }
+
 .benefits-item {
 }
+
 .benefits-count {
-    font-weight: 700;
-font-size: 42px;
-line-height: calc(57/42);
-text-align: center;
-letter-spacing: 0.05em;
-color: var(--second-title-color);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
 }
+
 .benefits-plus {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: calc(22/16);
-    text-align: center;
-    color: #FF6C00;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: #ff6c00;
 }
 .benefits-item-text {
-    font-weight: 600;
-font-size: 11px;
-line-height: calc(15/11);
-text-align: center;
-color: var(--second-title-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
 }
+
 .benefits-uptitle {
+  color: #303030;
 }
+
 .benefits-title {
-    color: #303030;
+  color: var(--second-title-color);
 }
 .benefits-subtitle {
-    font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-color: #555555;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* -----------------BARBERS---------------- */
+
+.barbers {
+}
+.barbers-uptitle {
+  color: #303030;
+}
+
+.barbers-title {
+  color: #303030;
+}
+
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--second-title-color);
+}
+
+.barbers-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.barbers-soc-list {
+}
+.barbers-soc-item {
+}
+.barbers-soc-link {
+}
+
+/* -----------------GALLERY---------------- */
+
+.gallery-uptitle {
+  color: #303030;
+}
+
+/* -----------------CONTaCTS---------------- */
+
+.contacts {
+  background-color: #303030;
+}
+.contacts-title {
+  color: var(--first-title-color);
+}
+
+.contacts-address {
+  font-style: inherit;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.contacts-link-bold {
+  font-weight: 700;
+}
+
+.contacts-schedule-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contacts-schedule-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
