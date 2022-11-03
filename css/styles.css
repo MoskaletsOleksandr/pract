@@ -56,6 +56,12 @@ body {
   letter-spacing: 0.05em;
 }
 
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .uptitle {
   font-weight: 600;
   font-size: 11px;
