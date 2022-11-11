@@ -421,6 +421,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+  margin-bottom: 30px;
 }
 
 .barbers-soc-list {
@@ -431,13 +432,33 @@ body {
 .barbers-soc-item {
   width: 44px;
   height: 44px;
-  background-color: red;
-  border-radius: 50%;
 }
 .barbers-soc-link {
   width: 100%;
   height: 100%;
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #ffffff;
 }
+
+/* .barbers-soc-icon {
+  fill: currentColor;
+} */
+
+.barbers-soc-link:hover {
+  background-color: aquamarine;
+  fill: blueviolet;
+}
+
+/* .barbers-soc-link:hover {
+  background-color: aquamarine;
+}
+.barbers-soc-link:hover .barbers-soc-icon {
+  fill: blueviolet;
+} */
 
 /* -----------------GALLERY---------------- */
 
