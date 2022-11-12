@@ -81,6 +81,16 @@ body {
   font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+..uptitle::before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
 }
 
 .btn {
@@ -216,6 +226,14 @@ body {
   color: var(--first-title-color);
   margin-bottom: 20px;
 }
+/* .hero-title::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: inline-block;
+} */
+
 .hero-subtitle {
   font-size: 18px;
   line-height: 1.6666;
@@ -305,8 +323,22 @@ body {
 }
 .prices-item {
   display: flex;
+  gap: 12px;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+}
+
+.prices-item::before {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.prices-item-text:first-child {
+  order: -1;
 }
 
 .prices-item:last-child {
